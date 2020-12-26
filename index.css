@@ -1,0 +1,82 @@
+.main-body {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+}
+
+.clues {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+.clues img {
+    flex: 1;
+    height: 100%;
+}
+.input {
+    font-family: sans-serif;
+    flex: 1;
+    margin-top: 8px;
+    padding: 4px;
+    border: 1px solid #fff;
+    border-radius: 32px;
+    background-color: #FFC37177;
+    color: #fff;
+    text-align: center;
+    transition: all ease-in-out 200ms;
+}
+
+.input:hover {
+    transform: scale(1.03);
+    background-color: #FFC371;
+}
+
+.bg-animation {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -10000;
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      
+}
+
+.music {
+    position: absolute;
+}
+
+.music audio {
+    border-radius: 32px;
+    opacity: 0.2;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    padding: 8px;
+    transform: scale(2);
+    z-index: 10000;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.overlay::selection {
+    color: #FFC371;
+    background-color: #FFC371;
+}

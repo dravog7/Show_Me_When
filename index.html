@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Me When</title>
+    <link rel="preload" href="index.js"/>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="bg-animation"></div>
+    <div class="main-body center">
+        <div class="clues">
+            <img src="clues/m.png"/>
+            <img src="clues/e.jpg"/>
+        </div>
+        <div class="input" ondrop="drop(event)" ondragover="allowDrop(event)">
+            Show Me When?
+        </div>
+    </div>
+
+    <div class="music" draggable="true" ondragstart="drag(event)" style="top: 50%;left:10%;transform: rotate(30deg);">
+        <audio src="music/ACDC - Highway to Hell.mp3" controls></audio>
+    </div>
+    <div class="music" draggable="true" ondragstart="drag(event)" style="top: 10%;left:50%;transform: rotate(40deg);">
+        <audio src="music/Linkin Park - In The End.mp3" controls></audio>
+    </div>
+    <div class="music" draggable="true" ondragstart="drag(event)" style="top: 80%;left:50%;transform: rotate(-30deg);">
+        <audio src="music/Logic - Till The End.mp3" controls></audio>
+    </div>
+    <div class="music" draggable="true" ondragstart="drag(event)" style="top: 20%;left:30%;transform: rotate(110deg);">
+        <audio src="music/Nelly Furtado - All good things (come to an end).mp3" controls></audio>
+    </div>
+    <div class="music" draggable="true" ondragstart="drag(event)" style="top: 10%;left:80%;transform: rotate(200deg);">
+        <audio src="music/Phoebe Bridgers - I Know the End.mp3" controls></audio>
+    </div>
+    <div class="music" draggable="true" ondragstart="drag(event)" style="top: 50%;left:10%;transform: rotate(-800deg);">
+        <audio src="music/Taylor Swift - End Game.mp3" controls></audio>
+    </div>
+    <div class="music" draggable="true" ondragstart="drag(event)" style="top: 50%;left:80%;transform: rotate(-20deg);">
+        <audio src="music/The Holydrug Couple - Forever End.mp3" controls></audio>
+    </div>
+
+    <div class="overlay">
+        /finished.html
+    </div>
+</body>
+</html>
